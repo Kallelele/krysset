@@ -28,11 +28,60 @@
         .active {
             background-color: #4CAF50;
         }
+        #wrapper {
+                border: 1px solid black;
+                width: 402px;
+                height: 402px;
+                margin: 0 auto;
+            }
+
+            .filled {
+                background: black;
+                border: 1px solid black;
+                padding: 0;
+                margin: 0;
+                float: left;
+                width: 50px;
+                height: 50px;
+      
+            }
+
+            .empty {
+                border: 1px solid black;
+                padding: 0;
+                margin: 0;
+                float: left;
+                width: 50px;
+                height: 50px;
+                font-size: 36px;
+                cursor: context-menu;
+                font-family: 'Comic Sans MS';
+                z-index: 1;
+                max-width: 50px;
+                max-height: 50px;
+                overflow: hidden;
+                text-align: center;
+                word-wrap: break-word;
+            }
+
+            .numbered {
+                counter-increment: value;
+                
+            }
+
+                .numbered:nth-of-type(n)::before {
+                    content: counter(value);
+                    font-size: 10px;
+                    position: absolute;
+                }
+         #letter{
+             text-align:center;
+         }
     </style>
     <ul>
             <li><a class="active"href="/">Home</a></li>
             <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/about">About</a></li>    
     </ul>
   <title>Krysset hem</title>
@@ -49,7 +98,81 @@
     <h1>Krysset</h1>      
     <p>En musikquiz</p>
   </div>   
-  <p>This is another text.</p>      
+  <p>This is another text.</p>
+  <div id="wrapper">
+    <div class="empty numbered"><input id="letter" maxlength="1"></div>
+    <div class="empty"><input id="letter" maxlength="1"></div>
+    <div class="empty"><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="filled" ></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="filled" ></div>
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled" ></div>
+
+    <div class="empty numbered"><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled" ></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty"><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty "><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled" ></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+    <div class="empty numbered" ><input id="letter" maxlength="1"></div>
+    <div class="empty"><input id="letter" maxlength="1"></div>
+    <div class="empty" ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="filled"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+    <div class="empty " ><input id="letter" maxlength="1"></div>
+
+
+</div>   
 </div>
 
 </body>
